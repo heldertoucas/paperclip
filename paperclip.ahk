@@ -35,6 +35,7 @@ Tabs.Push(MyGui.Add("Text", "x+10 y12 w80 h25 BackgroundTrans +0x0200", "2: FAMÃ
 Tabs.Push(MyGui.Add("Text", "x+10 y12 w100 h25 BackgroundTrans +0x0200", "3: PASSAPORTE"))
 Tabs.Push(MyGui.Add("Text", "x+10 y12 w80 h25 BackgroundTrans +0x0200", "4: FUTURO"))
 Tabs.Push(MyGui.Add("Text", "x+10 y12 w90 h25 BackgroundTrans +0x0200", "5: FREELANCE"))
+Tabs.Push(MyGui.Add("Text", "x+10 y12 w30 h25 BackgroundTrans +0x0200", "?"))
 
 for index, tabBtn in Tabs {
     tabBtn.OnEvent("Click", SetTab.Bind(index))
@@ -50,6 +51,24 @@ MyGui.SetFont("s11 c" TEXT_COLOR, "Consolas")
 Editor := MyGui.Add("Edit", "x16 y45 w548 h310 -VScroll Multi Background" EDITOR_BG " c" TEXT_COLOR, "")
 ; Add internal margins to Editor (EM_SETMARGINS)
 SendMessage(0xD3, 3, (12 & 0xFFFF) | (12 << 16), Editor.Hwnd)
+
+; Help View (Hidden by default)
+MyGui.SetFont("s10 c" TEXT_COLOR, "Segoe UI")
+HelpView := MyGui.Add("Text", "x16 y45 w548 h310 Hidden", "")
+HelpView.Value := "PAPERCLIP SHORTCUTS`n`n"
+    . "GENERAL:`n"
+    . "Ctrl+Enter  - Save & Close`n"
+    . "Esc         - Hide Window`n"
+    . "Ctrl+Esc    - Clear & Hide`n`n"
+    . "CAPTURE:`n"
+    . "Ctrl+[1-5]  - Switch Domains`n"
+    . "Ctrl+Shift+V- Clean Paste (Email fix)`n"
+    . "Ctrl+Alt+V  - Paste as Markdown`n"
+    . "Ctrl+J      - Templates Menu`n`n"
+    . "FORMATTING:`n"
+    . "Ctrl+T      - Insert Timestamp`n"
+    . "Ctrl+L      - Checklist Item`n"
+    . "Ctrl+K      - Wrap in [[Wiki-link]]`n"
 
 ; Status Bar
 MyGui.SetFont("s9 c" MUTED_COLOR, "Segoe UI")
@@ -89,13 +108,23 @@ SetTab(index, *) {
             tabBtn.SetFont("norm c" MUTED_COLOR)
         }
     }
-    StatusBar.Value := "Domain: " Domains[index] " | Context: " LastProcess
     
-    ; If buffer has YAML, update domain line dynamically
-    text := Editor.Value
-    if (RegExMatch(text, "m)^domain:.*$")) {
-        text := RegExReplace(text, "m)^domain:.*$", "domain: " Domains[index])
-        Editor.Value := text
+    if (index == 6) { ; Help Tab
+        Editor.Visible := false
+        HelpView.Visible := true
+        StatusBar.Value := "Help Mode"
+    } else {
+        HelpView.Visible := false
+        Editor.Visible := true
+        StatusBar.Value := "Domain: " Domains[index] " | Context: " LastProcess
+        Editor.Focus()
+        
+        ; If buffer has YAML, update domain line dynamically
+        text := Editor.Value
+        if (RegExMatch(text, "m)^domain:.*$")) {
+            text := RegExReplace(text, "m)^domain:.*$", "domain: " Domains[index])
+            Editor.Value := text
+        }
     }
 }
 
@@ -145,7 +174,111 @@ Esc::MyGui.Hide()
 ^3:: SetTab(3)
 ^4:: SetTab(4)
 ^5:: SetTab(5)
+
+; --- New Shortcuts ---
+F1::SetTab(6)
+^t::InsertText(FormatTime(, "HH:mm") ": ")
+^l::InsertText("- [ ] ")
+^k::WrapSelection("[[", "]]")
+^+v::CleanPaste() ; Ctrl+Shift+V for Clean Paste (removes weird email formatting)
+^!v::PasteAsMarkdown() ; Ctrl+Alt+V for Smart Markdown Paste
+^j::ShowTemplates() ; Ctrl+J for Templates/Snippets
 #HotIf
+
+InsertText(str) {
+    SendMessage(0x00C2, 0, StrPtr(str), Editor.Hwnd)
+}
+
+WrapSelection(prefix, suffix) {
+    ; Get current selection using clipboard
+    oldClip := A_Clipboard
+    A_Clipboard := ""
+    Send("^c")
+    if ClipWait(0.2) {
+        sel := A_Clipboard
+        A_Clipboard := prefix sel suffix
+        Send("^v")
+    } else {
+        InsertText(prefix suffix)
+    }
+    A_Clipboard := oldClip
+}
+
+CleanPaste() {
+    text := A_Clipboard
+    ; Strip HTML-like artifacts often found in emails or complex docs
+    text := RegExReplace(text, "\\r\\n", "`n") ; Normalize line endings
+    text := RegExReplace(text, "(\\n){3,}", "`n`n") ; Collapse excessive whitespace
+    InsertText(Trim(text))
+    StatusBar.Value := "Clean paste applied."
+}
+
+PasteAsMarkdown() {
+    html := GetClipboardHTML()
+    if (html == "") {
+        InsertText(A_Clipboard)
+        return
+    }
+    
+    ; Basic conversion of HTML fragment to Markdown
+    md := html
+    ; 1. Links: <a href="...">text</a> -> [text](url)
+    md := RegExReplace(md, "is)<a [^>]*href=[\\\\x22\\\\x27]([^\\\\x22\\\\x27]+)[\\\\x22\\\\x27][^>]*>(.*?)</a>", "[$2]($1)")
+    ; 2. Bold: <b>, <strong> -> **
+    md := RegExReplace(md, "is)<(strong|b)>(.*?)</\\1>", "**$2**")
+    ; 3. Italics: <i>, <em> -> *
+    md := RegExReplace(md, "is)<(em|i)>(.*?)</\\1>", "*$2*")
+    ; 4. Lists: <li> -> - 
+    md := RegExReplace(md, "is)<li[^>]*>(.*?)</li>", "- $1`n")
+    ; 5. Headers: <h1-6> -> #
+    md := RegExReplace(md, "is)<h1[^>]*>(.*?)</h1>", "# $1`n")
+    md := RegExReplace(md, "is)<h2[^>]*>(.*?)</h2>", "## $1`n")
+    md := RegExReplace(md, "is)<h3[^>]*>(.*?)</h3>", "### $1`n")
+    ; 6. Line breaks and Paragraphs
+    md := RegExReplace(md, "is)<br\\s*/?>", "`n")
+    md := RegExReplace(md, "is)<p[^>]*>(.*?)</p>", "$1`n`n")
+    
+    ; Strip remaining HTML tags
+    md := RegExReplace(md, "<[^>]+>", "")
+    
+    ; Decode common entities
+    md := StrReplace(md, "&nbsp;", " ")
+    md := StrReplace(md, "&amp;", "&")
+    md := StrReplace(md, "&lt;", "<")
+    md := StrReplace(md, "&gt;", ">")
+    md := StrReplace(md, "&quot;", '\"')
+    
+    InsertText(Trim(md))
+    StatusBar.Value := "Pasted as Markdown."
+}
+
+GetClipboardHTML() {
+    cfFormat := DllCall("RegisterClipboardFormat", "Str", "HTML Format", "UInt")
+    if !DllCall("IsClipboardFormatAvailable", "UInt", cfFormat)
+        return ""
+    if !DllCall("OpenClipboard", "Ptr", 0)
+        return ""
+    if !hData := DllCall("GetClipboardData", "UInt", cfFormat, "Ptr") {
+        DllCall("CloseClipboard")
+        return ""
+    }
+    pData := DllCall("GlobalLock", "Ptr", hData, "Ptr")
+    html := StrGet(pData, "UTF-8")
+    DllCall("GlobalUnlock", "Ptr", hData)
+    DllCall("CloseClipboard")
+    
+    if RegExMatch(html, "s)<!--StartFragment-->(.*)<!--EndFragment-->", &match)
+        return match[1]
+    return ""
+}
+
+ShowTemplates() {
+    TemplateMenu := Menu()
+    TemplateMenu.Add("Email: Follow-up", (*) => InsertText("Dear [Name],`n`nFollowing up on our conversation regarding..."))
+    TemplateMenu.Add("Email: Meeting Minutes", (*) => InsertText("## Meeting Minutes`nDate: " FormatTime(,"yyyy-MM-dd") "`nParticipants: `n`n### Actions:`n- [ ] "))
+    TemplateMenu.Add("Code: Task Ref", (*) => InsertText("`n> [!TASK] Ref: " LastProcess "`n> " LastContext "`n"))
+    TemplateMenu.Show()
+}
 
 Gui_DropFiles(GuiObj, GuiCtrlObj, FileArray, *) {
     for i, file in FileArray {
@@ -166,7 +299,7 @@ SaveNote() {
     }
 
     ; Require some content outside the YAML
-    if (!RegExMatch(text, "---[\s\S]+?---[\s\S]*[^\s]")) {
+    if (!RegExMatch(text, "---[\\s\\S]+?---[\\s\\S]*[^\\s]")) {
         StatusBar.Value := "Error: Empty note."
         return
     }

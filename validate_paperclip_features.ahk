@@ -1,9 +1,9 @@
 #Requires AutoHotkey v2.0
 #SingleInstance Force
 
-; Validation Script for Project Monolith AHK Features
+; Validation Script for Project Paperclip AHK Features
 
-TrayTip "Monolith Validation", "Press Ctrl+Shift+F1 to test context extraction."
+TrayTip "Paperclip Validation", "Press Ctrl+Shift+F1 to test context extraction."
 
 ^+f1:: {
     ; Test 1: Previous Window Detection
@@ -20,7 +20,7 @@ TrayTip "Monolith Validation", "Press Ctrl+Shift+F1 to test context extraction."
 }
 
 ShowTestGui() {
-    myGui := Gui("+AlwaysOnTop -Caption +Border", "Monolith Test")
+    myGui := Gui("+AlwaysOnTop -Caption +Border", "Paperclip Test")
     myGui.BackColor := "101010"
     myGui.SetFont("s12 cE0E0E0", "Consolas")
     
