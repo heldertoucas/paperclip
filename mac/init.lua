@@ -361,6 +361,7 @@ paperclip.webview = hs.webview.new({x = 0, y = 0, w = paperclip.width, h = paper
 }, ucc)
 paperclip.webview:windowStyle({"borderless", "titled"})
 paperclip.webview:shadow(true)
+paperclip.webview:allowTextEntry(true)
 paperclip.webview:level(hs.drawing.windowLevels.mainMenu)
 paperclip.webview:html(html_template)
 
@@ -433,6 +434,7 @@ function paperclip.show()
     })
     paperclip.webview:show()
     paperclip.populateYAML("")
+    paperclip.webview:evaluateJavaScript("document.getElementById('editor').focus();")
     paperclip.is_visible = true
 end
 
@@ -451,7 +453,13 @@ function paperclip.toggle()
 end
 
 -- Global Hotkey
-hs.hotkey.bind(paperclip.hotkey[1], paperclip.hotkey[2], paperclip.hotkey[3], function()
+local mods = {}
+for i = 1, #paperclip.hotkey - 1 do
+    table.insert(mods, paperclip.hotkey[i])
+end
+local key = paperclip.hotkey[#paperclip.hotkey]
+
+hs.hotkey.bind(mods, key, function()
     paperclip.toggle()
 end)
 
