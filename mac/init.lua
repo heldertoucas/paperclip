@@ -6,7 +6,7 @@ local paperclip = {}
 
 -- Configuration
 paperclip.hotkey = {"cmd", "shift", "space"}
-paperclip.destination_dir = hs.fs.currentDir() .. "/obsidian-ht/00-inbox/mac/"
+paperclip.destination_dir = os.getenv("HOME") .. "/Dev/obsidian-ht/00-inbox/mac/"
 paperclip.width = 580
 paperclip.height = 400
 paperclip.domains = {"system", "pessoal", "cmlisboa", "cmlisboa", "freelance"}
@@ -82,6 +82,32 @@ local html_template = [[
             display: flex;
             justify-content: space-between;
         }
+        /* Templates Menu Styles */
+        .templates-menu {
+            position: absolute;
+            bottom: 45px;
+            left: 20px;
+            background: #FDFBF7;
+            border: 1px solid #E5E1D8;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            display: none;
+            flex-direction: column;
+            z-index: 1000;
+            width: 250px;
+            overflow: hidden;
+        }
+        .template-item {
+            padding: 8px 12px;
+            font-size: 12px;
+            cursor: pointer;
+            color: var(--text-primary);
+            transition: background-color 0.1s ease;
+        }
+        .template-item:hover, .template-item.active {
+            background-color: rgba(0,0,0,0.04);
+            color: var(--accent);
+        }
     </style>
 </head>
 <body>
@@ -94,12 +120,37 @@ local html_template = [[
         <div class="tab" onclick="showHelp()">?</div>
     </div>
     <textarea id="editor" autofocus placeholder="Write or speak..."></textarea>
+    
+    <div id="templates-menu" class="templates-menu">
+        <div class="template-item active" data-index="0">Email: Follow-up</div>
+        <div class="template-item" data-index="1">Email: Meeting Minutes</div>
+        <div class="template-item" data-index="2">Code: Task Ref</div>
+    </div>
+
     <div class="footer">
         <span id="status">Ready</span>
         <span>Cmd+Enter to Save</span>
     </div>
 
     <script>
+        const templates = [
+            {
+                name: "Email: Follow-up",
+                text: "Dear [Name],\n\nFollowing up on our conversation regarding..."
+            },
+            {
+                name: "Email: Meeting Minutes",
+                text: "## Meeting Minutes\nDate: " + new Date().toISOString().split('T')[0] + "\nParticipants: \n\n### Actions:\n- [ ] "
+            },
+            {
+                name: "Code: Task Ref",
+                text: "" // Dynamically filled by lua context
+            }
+        ];
+        
+        let templatesActive = false;
+        let activeTemplateIndex = 0;
+
         function setDomain(idx) {
             const tabs = document.querySelectorAll('.tab');
             tabs.forEach((t, i) => {
@@ -119,7 +170,8 @@ local html_template = [[
                 "CAPTURE:\n" +
                 "Cmd+[1-5]  - Switch Domains\n" +
                 "Cmd+Shift+V- Clean Paste\n" +
-                "Cmd+Alt+V  - Paste as Markdown\n\n" +
+                "Cmd+Alt+V  - Paste as Markdown\n" +
+                "Cmd+J      - Templates Menu\n\n" +
                 "FORMATTING:\n" +
                 "Cmd+T      - Insert Timestamp\n" +
                 "Cmd+L      - Checklist Item\n" +
@@ -167,7 +219,63 @@ local html_template = [[
             return md.trim();
         }
 
+        function setTaskRefTemplate(lastProcess, lastContext) {
+            templates[2].text = "\n> [!TASK] Ref: " + lastProcess + "\n> " + lastContext + "\n";
+        }
+
+        function toggleTemplates() {
+            const menu = document.getElementById('templates-menu');
+            templatesActive = !templatesActive;
+            if (templatesActive) {
+                menu.style.display = 'flex';
+                updateActiveTemplateHighlight();
+            } else {
+                menu.style.display = 'none';
+            }
+        }
+
+        function updateActiveTemplateHighlight() {
+            const items = document.querySelectorAll('.template-item');
+            items.forEach((item, idx) => {
+                if (idx === activeTemplateIndex) {
+                    item.classList.add('active');
+                } else {
+                    item.classList.remove('active');
+                }
+            });
+        }
+
+        function triggerTemplateInsert() {
+            insertText(templates[activeTemplateIndex].text);
+            toggleTemplates();
+        }
+
         document.getElementById('editor').addEventListener('keydown', (e) => {
+            if (templatesActive) {
+                if (e.key === 'ArrowDown') {
+                    e.preventDefault();
+                    activeTemplateIndex = (activeTemplateIndex + 1) % templates.length;
+                    updateActiveTemplateHighlight();
+                    return;
+                }
+                if (e.key === 'ArrowUp') {
+                    e.preventDefault();
+                    activeTemplateIndex = (activeTemplateIndex - 1 + templates.length) % templates.length;
+                    updateActiveTemplateHighlight();
+                    return;
+                }
+                if (e.key === 'Enter') {
+                    e.preventDefault();
+                    triggerTemplateInsert();
+                    return;
+                }
+                if (e.key === 'Escape') {
+                    e.preventDefault();
+                    toggleTemplates();
+                    return;
+                }
+            }
+
             if (e.metaKey && e.key === 'Enter') {
                 window.webkit.messageHandlers.paperclip.postMessage({
                     action: 'save', 
@@ -201,6 +309,18 @@ local html_template = [[
                 e.preventDefault();
                 window.webkit.messageHandlers.paperclip.postMessage({action: 'smartPaste'});
             }
+            if (e.metaKey && e.key === 'j') {
+                e.preventDefault();
+                toggleTemplates();
+            }
+        });
+
+        // Click handler for templates
+        document.querySelectorAll('.template-item').forEach(item => {
+            item.addEventListener('click', () => {
+                activeTemplateIndex = parseInt(item.getAttribute('data-index'));
+                triggerTemplateInsert();
+            });
         });
     </script>
 </body>
@@ -255,6 +375,9 @@ function paperclip.captureContext()
         local ok, url = hs.applescript.appleScript('tell application "Google Chrome" to return URL of active tab of front window')
         if ok then paperclip.last_context = url end
     end
+    
+    -- Inject context into templates inside JS
+    paperclip.webview:evaluateJavaScript(string.format("setTaskRefTemplate(%q, %q)", paperclip.last_process, paperclip.last_context))
 end
 
 -- Logic: Populate YAML
@@ -310,6 +433,7 @@ function paperclip.show()
     paperclip.is_visible = true
 end
 
+-- Force hide
 function paperclip.hide()
     paperclip.webview:hide()
     paperclip.is_visible = false
@@ -329,3 +453,4 @@ hs.hotkey.bind(paperclip.hotkey[1], paperclip.hotkey[2], paperclip.hotkey[3], fu
 end)
 
 return paperclip
+
