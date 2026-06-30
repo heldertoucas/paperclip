@@ -1,0 +1,1845 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "init.lua",
+      "file_type": "code",
+      "source_file": "mac/init.lua",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "mac_init",
+      "community": 4,
+      "norm_label": "init.lua"
+    },
+    {
+      "label": "paperclip.captureContext()",
+      "file_type": "code",
+      "source_file": "mac/init.lua",
+      "source_location": "L369",
+      "_origin": "ast",
+      "id": "mac_init_paperclip_capturecontext",
+      "community": 4,
+      "norm_label": "paperclip.capturecontext()"
+    },
+    {
+      "label": "paperclip.populateYAML()",
+      "file_type": "code",
+      "source_file": "mac/init.lua",
+      "source_location": "L388",
+      "_origin": "ast",
+      "id": "mac_init_paperclip_populateyaml",
+      "community": 4,
+      "norm_label": "paperclip.populateyaml()"
+    },
+    {
+      "label": "paperclip.saveNote()",
+      "file_type": "code",
+      "source_file": "mac/init.lua",
+      "source_location": "L405",
+      "_origin": "ast",
+      "id": "mac_init_paperclip_savenote",
+      "community": 4,
+      "norm_label": "paperclip.savenote()"
+    },
+    {
+      "label": "paperclip.show()",
+      "file_type": "code",
+      "source_file": "mac/init.lua",
+      "source_location": "L425",
+      "_origin": "ast",
+      "id": "mac_init_paperclip_show",
+      "community": 4,
+      "norm_label": "paperclip.show()"
+    },
+    {
+      "label": "paperclip.hide()",
+      "file_type": "code",
+      "source_file": "mac/init.lua",
+      "source_location": "L442",
+      "_origin": "ast",
+      "id": "mac_init_paperclip_hide",
+      "community": 4,
+      "norm_label": "paperclip.hide()"
+    },
+    {
+      "label": "paperclip.toggle()",
+      "file_type": "code",
+      "source_file": "mac/init.lua",
+      "source_location": "L447",
+      "_origin": "ast",
+      "id": "mac_init_paperclip_toggle",
+      "community": 4,
+      "norm_label": "paperclip.toggle()"
+    },
+    {
+      "label": "build.py",
+      "file_type": "code",
+      "source_file": "win/build.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "win_build",
+      "community": 11,
+      "norm_label": "build.py"
+    },
+    {
+      "label": "monitor_perf.ps1",
+      "file_type": "code",
+      "source_file": "win/monitor_perf.ps1",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "win_monitor_perf",
+      "community": 12,
+      "norm_label": "monitor_perf.ps1"
+    },
+    {
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "readme",
+      "community": 8,
+      "norm_label": "readme.md"
+    },
+    {
+      "label": "Paperclip",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "readme_paperclip",
+      "community": 8,
+      "norm_label": "paperclip"
+    },
+    {
+      "label": "\ud83d\ude80 Key Features",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "readme_key_features",
+      "community": 8,
+      "norm_label": "\ud83d\ude80 key features"
+    },
+    {
+      "label": "\ud83d\udee0\ufe0f Architecture",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L22",
+      "_origin": "ast",
+      "id": "readme_architecture",
+      "community": 8,
+      "norm_label": "\ud83d\udee0\ufe0f architecture"
+    },
+    {
+      "label": "\ud83d\udcca Performance",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L28",
+      "_origin": "ast",
+      "id": "readme_performance",
+      "community": 8,
+      "norm_label": "\ud83d\udcca performance"
+    },
+    {
+      "label": "tracks.md",
+      "file_type": "document",
+      "source_file": "conductor/tracks.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "conductor_tracks",
+      "community": 5,
+      "norm_label": "tracks.md"
+    },
+    {
+      "label": "Project Tracks",
+      "file_type": "document",
+      "source_file": "conductor/tracks.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "conductor_tracks_project_tracks",
+      "community": 5,
+      "norm_label": "project tracks"
+    },
+    {
+      "label": "plan.md",
+      "file_type": "document",
+      "source_file": "conductor/tracks/mac-parity/plan.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "mac_parity_plan",
+      "community": 5,
+      "norm_label": "plan.md"
+    },
+    {
+      "label": "Track: Mac Parity Implementation",
+      "file_type": "document",
+      "source_file": "conductor/tracks/mac-parity/plan.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "mac_parity_plan_track_mac_parity_implementation",
+      "community": 5,
+      "norm_label": "track: mac parity implementation"
+    },
+    {
+      "label": "Objectives",
+      "file_type": "document",
+      "source_file": "conductor/tracks/mac-parity/plan.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "mac_parity_plan_objectives",
+      "community": 5,
+      "norm_label": "objectives"
+    },
+    {
+      "label": "project-draft.md",
+      "file_type": "document",
+      "source_file": "project-draft.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "project_draft",
+      "community": 3,
+      "norm_label": "project-draft.md"
+    },
+    {
+      "label": "Paperclip Project Draft",
+      "file_type": "document",
+      "source_file": "project-draft.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "project_draft_paperclip_project_draft",
+      "community": 3,
+      "norm_label": "paperclip project draft"
+    },
+    {
+      "label": "Document Index",
+      "file_type": "document",
+      "source_file": "project-draft.md",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "project_draft_document_index",
+      "community": 3,
+      "norm_label": "document index"
+    },
+    {
+      "label": "PRD1: Desktop Application",
+      "file_type": "document",
+      "source_file": "project-draft.md",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "project_draft_prd1_desktop_application",
+      "community": 0,
+      "norm_label": "prd1: desktop application"
+    },
+    {
+      "label": "Product Requirement Document (PRD) \u00b7 Vers\u00e3o Expandida",
+      "file_type": "document",
+      "source_file": "project-draft.md",
+      "source_location": "L18",
+      "_origin": "ast",
+      "id": "project_draft_product_requirement_document_prd_vers\u00e3o_expandida",
+      "community": 0,
+      "norm_label": "product requirement document (prd) \u00b7 versao expandida"
+    },
+    {
+      "label": "Project Paperclip: Ultra-lightweight Desktop Scratchpad",
+      "file_type": "document",
+      "source_file": "project-draft.md",
+      "source_location": "L20",
+      "_origin": "ast",
+      "id": "project_draft_project_paperclip_ultra_lightweight_desktop_scratchpad",
+      "community": 0,
+      "norm_label": "project paperclip: ultra-lightweight desktop scratchpad"
+    },
+    {
+      "label": "1. Vision & Purpose",
+      "file_type": "document",
+      "source_file": "project-draft.md",
+      "source_location": "L24",
+      "_origin": "ast",
+      "id": "project_draft_1_vision_purpose",
+      "community": 9,
+      "norm_label": "1. vision & purpose"
+    },
+    {
+      "label": "1.1. Contexto Acad\u00e9mico e Profissional",
+      "file_type": "document",
+      "source_file": "project-draft.md",
+      "source_location": "L26",
+      "_origin": "ast",
+      "id": "project_draft_1_1_contexto_acad\u00e9mico_e_profissional",
+      "community": 9,
+      "norm_label": "1.1. contexto academico e profissional"
+    },
+    {
+      "label": "1.2. Objetivos Estrat\u00e9gicos",
+      "file_type": "document",
+      "source_file": "project-draft.md",
+      "source_location": "L30",
+      "_origin": "ast",
+      "id": "project_draft_1_2_objetivos_estrat\u00e9gicos",
+      "community": 9,
+      "norm_label": "1.2. objetivos estrategicos"
+    },
+    {
+      "label": "2. System Architecture & Ecosystem Topology",
+      "file_type": "document",
+      "source_file": "project-draft.md",
+      "source_location": "L40",
+      "_origin": "ast",
+      "id": "project_draft_2_system_architecture_ecosystem_topology",
+      "community": 0,
+      "norm_label": "2. system architecture & ecosystem topology"
+    },
+    {
+      "label": "2.1. Fluxo de Dados e Topologia de Redes",
+      "file_type": "document",
+      "source_file": "project-draft.md",
+      "source_location": "L42",
+      "_origin": "ast",
+      "id": "project_draft_2_1_fluxo_de_dados_e_topologia_de_redes",
+      "community": 0,
+      "norm_label": "2.1. fluxo de dados e topologia de redes"
+    },
+    {
+      "label": "2.2. Robustez e Tratamento de Exce\u00e7\u00f5es Criptogr\u00e1ficas",
+      "file_type": "document",
+      "source_file": "project-draft.md",
+      "source_location": "L73",
+      "_origin": "ast",
+      "id": "project_draft_2_2_robustez_e_tratamento_de_exce\u00e7\u00f5es_criptogr\u00e1ficas",
+      "community": 0,
+      "norm_label": "2.2. robustez e tratamento de excecoes criptograficas"
+    },
+    {
+      "label": "3. Functional Specifications & Feature Requirements",
+      "file_type": "document",
+      "source_file": "project-draft.md",
+      "source_location": "L81",
+      "_origin": "ast",
+      "id": "project_draft_3_functional_specifications_feature_requirements",
+      "community": 0,
+      "norm_label": "3. functional specifications & feature requirements"
+    },
+    {
+      "label": "3.1. Keyboard-First Interface & Window Lifecycle",
+      "file_type": "document",
+      "source_file": "project-draft.md",
+      "source_location": "L83",
+      "_origin": "ast",
+      "id": "project_draft_3_1_keyboard_first_interface_window_lifecycle",
+      "community": 0,
+      "norm_label": "3.1. keyboard-first interface & window lifecycle"
+    },
+    {
+      "label": "3.2. Contextual Tab Architecture & Dynamic Routing",
+      "file_type": "document",
+      "source_file": "project-draft.md",
+      "source_location": "L92",
+      "_origin": "ast",
+      "id": "project_draft_3_2_contextual_tab_architecture_dynamic_routing",
+      "community": 0,
+      "norm_label": "3.2. contextual tab architecture & dynamic routing"
+    },
+    {
+      "label": "3.3. Arquitetura Local-First e Sincroniza\u00e7\u00e3o Concorrente",
+      "file_type": "document",
+      "source_file": "project-draft.md",
+      "source_location": "L111",
+      "_origin": "ast",
+      "id": "project_draft_3_3_arquitetura_local_first_e_sincroniza\u00e7\u00e3o_concorrente",
+      "community": 0,
+      "norm_label": "3.3. arquitetura local-first e sincronizacao concorrente"
+    },
+    {
+      "label": "3.4. Local Clipboard Integration",
+      "file_type": "document",
+      "source_file": "project-draft.md",
+      "source_location": "L117",
+      "_origin": "ast",
+      "id": "project_draft_3_4_local_clipboard_integration",
+      "community": 0,
+      "norm_label": "3.4. local clipboard integration"
+    },
+    {
+      "label": "3.5. Pipeline de Transcri\u00e7\u00e3o de \u00c1udio (Whisper + VAD)",
+      "file_type": "document",
+      "source_file": "project-draft.md",
+      "source_location": "L123",
+      "_origin": "ast",
+      "id": "project_draft_3_5_pipeline_de_transcri\u00e7\u00e3o_de_\u00e1udio_whisper_vad",
+      "community": 0,
+      "norm_label": "3.5. pipeline de transcricao de audio (whisper + vad)"
+    },
+    {
+      "label": "4. Visual & Interface Design Guidelines",
+      "file_type": "document",
+      "source_file": "project-draft.md",
+      "source_location": "L132",
+      "_origin": "ast",
+      "id": "project_draft_4_visual_interface_design_guidelines",
+      "community": 0,
+      "norm_label": "4. visual & interface design guidelines"
+    },
+    {
+      "label": "4.1. Arquitetura de Janela e Comportamento Geom\u00e9trico",
+      "file_type": "document",
+      "source_file": "project-draft.md",
+      "source_location": "L136",
+      "_origin": "ast",
+      "id": "project_draft_4_1_arquitetura_de_janela_e_comportamento_geom\u00e9trico",
+      "community": 0,
+      "norm_label": "4.1. arquitetura de janela e comportamento geometrico"
+    },
+    {
+      "label": "4.2. Especifica\u00e7\u00f5es de Estilo e Folha de Estilo Completa (PySide6 QSS)",
+      "file_type": "document",
+      "source_file": "project-draft.md",
+      "source_location": "L141",
+      "_origin": "ast",
+      "id": "project_draft_4_2_especifica\u00e7\u00f5es_de_estilo_e_folha_de_estilo_completa_pyside6_qss",
+      "community": 0,
+      "norm_label": "4.2. especificacoes de estilo e folha de estilo completa (pyside6 qss)"
+    },
+    {
+      "label": "5. System Integration & Second Brain Alignment",
+      "file_type": "document",
+      "source_file": "project-draft.md",
+      "source_location": "L225",
+      "_origin": "ast",
+      "id": "project_draft_5_system_integration_second_brain_alignment",
+      "community": 10,
+      "norm_label": "5. system integration & second brain alignment"
+    },
+    {
+      "label": "5.1. Seguran\u00e7a, Cifragem Sim\u00e9trica e Autentica\u00e7\u00e3o Cloud",
+      "file_type": "document",
+      "source_file": "project-draft.md",
+      "source_location": "L227",
+      "_origin": "ast",
+      "id": "project_draft_5_1_seguran\u00e7a_cifragem_sim\u00e9trica_e_autentica\u00e7\u00e3o_cloud",
+      "community": 10,
+      "norm_label": "5.1. seguranca, cifragem simetrica e autenticacao cloud"
+    },
+    {
+      "label": "5.2. Pipeline do Script de Ingest\u00e3o Local (`pull_pocketbase.py`)",
+      "file_type": "document",
+      "source_file": "project-draft.md",
+      "source_location": "L235",
+      "_origin": "ast",
+      "id": "project_draft_5_2_pipeline_do_script_de_ingest\u00e3o_local_pull_pocketbase_py",
+      "community": 10,
+      "norm_label": "5.2. pipeline do script de ingestao local (`pull_pocketbase.py`)"
+    },
+    {
+      "label": "6. Non-Functional Requirements & Performance Targets",
+      "file_type": "document",
+      "source_file": "project-draft.md",
+      "source_location": "L334",
+      "_origin": "ast",
+      "id": "project_draft_6_non_functional_requirements_performance_targets",
+      "community": 0,
+      "norm_label": "6. non-functional requirements & performance targets"
+    },
+    {
+      "label": "6.1. M\u00e9tricas de Desempenho e Aloca\u00e7\u00e3o de Recursos",
+      "file_type": "document",
+      "source_file": "project-draft.md",
+      "source_location": "L336",
+      "_origin": "ast",
+      "id": "project_draft_6_1_m\u00e9tricas_de_desempenho_e_aloca\u00e7\u00e3o_de_recursos",
+      "community": 0,
+      "norm_label": "6.1. metricas de desempenho e alocacao de recursos"
+    },
+    {
+      "label": "6.2. Robustez de Rede e Estrat\u00e9gia de Toler\u00e2ncia a Falhas",
+      "file_type": "document",
+      "source_file": "project-draft.md",
+      "source_location": "L342",
+      "_origin": "ast",
+      "id": "project_draft_6_2_robustez_de_rede_e_estrat\u00e9gia_de_toler\u00e2ncia_a_falhas",
+      "community": 0,
+      "norm_label": "6.2. robustez de rede e estrategia de tolerancia a falhas"
+    },
+    {
+      "label": "PRD2: Web/PWA Application",
+      "file_type": "document",
+      "source_file": "project-draft.md",
+      "source_location": "L351",
+      "_origin": "ast",
+      "id": "project_draft_prd2_web_pwa_application",
+      "community": 1,
+      "norm_label": "prd2: web/pwa application"
+    },
+    {
+      "label": "Product Requirement Document (PRD)",
+      "file_type": "document",
+      "source_file": "project-draft.md",
+      "source_location": "L353",
+      "_origin": "ast",
+      "id": "project_draft_product_requirement_document_prd",
+      "community": 1,
+      "norm_label": "product requirement document (prd)"
+    },
+    {
+      "label": "Project Paperclip Web: Cloud-Based Mobile & Browser Capture Endpoint",
+      "file_type": "document",
+      "source_file": "project-draft.md",
+      "source_location": "L355",
+      "_origin": "ast",
+      "id": "project_draft_project_paperclip_web_cloud_based_mobile_browser_capture_endpoint",
+      "community": 1,
+      "norm_label": "project paperclip web: cloud-based mobile & browser capture endpoint"
+    },
+    {
+      "label": "1. Vision & Purpose",
+      "file_type": "document",
+      "source_file": "project-draft.md",
+      "source_location": "L359",
+      "_origin": "ast",
+      "id": "project_draft_1_vision_purpose_359",
+      "community": 1,
+      "norm_label": "1. vision & purpose"
+    },
+    {
+      "label": "1.1. Contexto de Mobilidade e Acessibilidade Universal",
+      "file_type": "document",
+      "source_file": "project-draft.md",
+      "source_location": "L361",
+      "_origin": "ast",
+      "id": "project_draft_1_1_contexto_de_mobilidade_e_acessibilidade_universal",
+      "community": 1,
+      "norm_label": "1.1. contexto de mobilidade e acessibilidade universal"
+    },
+    {
+      "label": "1.2. Objetivos Estrat\u00e9gicos",
+      "file_type": "document",
+      "source_file": "project-draft.md",
+      "source_location": "L367",
+      "_origin": "ast",
+      "id": "project_draft_1_2_objetivos_estrat\u00e9gicos_367",
+      "community": 1,
+      "norm_label": "1.2. objetivos estrategicos"
+    },
+    {
+      "label": "2. System Architecture & Ecosystem Topology",
+      "file_type": "document",
+      "source_file": "project-draft.md",
+      "source_location": "L375",
+      "_origin": "ast",
+      "id": "project_draft_2_system_architecture_ecosystem_topology_375",
+      "community": 1,
+      "norm_label": "2. system architecture & ecosystem topology"
+    },
+    {
+      "label": "2.1. Mitiga\u00e7\u00e3o de Limita\u00e7\u00f5es Serverless",
+      "file_type": "document",
+      "source_file": "project-draft.md",
+      "source_location": "L398",
+      "_origin": "ast",
+      "id": "project_draft_2_1_mitiga\u00e7\u00e3o_de_limita\u00e7\u00f5es_serverless",
+      "community": 1,
+      "norm_label": "2.1. mitigacao de limitacoes serverless"
+    },
+    {
+      "label": "3. Functional Specifications & Feature Requirements",
+      "file_type": "document",
+      "source_file": "project-draft.md",
+      "source_location": "L407",
+      "_origin": "ast",
+      "id": "project_draft_3_functional_specifications_feature_requirements_407",
+      "community": 6,
+      "norm_label": "3. functional specifications & feature requirements"
+    },
+    {
+      "label": "3.1. Interface Web Progressiva (PWA) e Responsividade",
+      "file_type": "document",
+      "source_file": "project-draft.md",
+      "source_location": "L409",
+      "_origin": "ast",
+      "id": "project_draft_3_1_interface_web_progressiva_pwa_e_responsividade",
+      "community": 6,
+      "norm_label": "3.1. interface web progressiva (pwa) e responsividade"
+    },
+    {
+      "label": "3.2. Menu Superior de Abas e Atalhos Touch/Teclado",
+      "file_type": "document",
+      "source_file": "project-draft.md",
+      "source_location": "L415",
+      "_origin": "ast",
+      "id": "project_draft_3_2_menu_superior_de_abas_e_atalhos_touch_teclado",
+      "community": 6,
+      "norm_label": "3.2. menu superior de abas e atalhos touch/teclado"
+    },
+    {
+      "label": "3.3. Integra\u00e7\u00e3o com Clipboard do Android/Browser",
+      "file_type": "document",
+      "source_file": "project-draft.md",
+      "source_location": "L428",
+      "_origin": "ast",
+      "id": "project_draft_3_3_integra\u00e7\u00e3o_com_clipboard_do_android_browser",
+      "community": 6,
+      "norm_label": "3.3. integracao com clipboard do android/browser"
+    },
+    {
+      "label": "3.4. Captura de Voz Nativa (Web Audio API + Whisper Cloud)",
+      "file_type": "document",
+      "source_file": "project-draft.md",
+      "source_location": "L432",
+      "_origin": "ast",
+      "id": "project_draft_3_4_captura_de_voz_nativa_web_audio_api_whisper_cloud",
+      "community": 6,
+      "norm_label": "3.4. captura de voz nativa (web audio api + whisper cloud)"
+    },
+    {
+      "label": "4. Visual & Interface Design Guidelines",
+      "file_type": "document",
+      "source_file": "project-draft.md",
+      "source_location": "L440",
+      "_origin": "ast",
+      "id": "project_draft_4_visual_interface_design_guidelines_440",
+      "community": 1,
+      "norm_label": "4. visual & interface design guidelines"
+    },
+    {
+      "label": "4.1. C\u00f3digo Completo de Estilo e Layout (HTML + CSS Incorporado)",
+      "file_type": "document",
+      "source_file": "project-draft.md",
+      "source_location": "L444",
+      "_origin": "ast",
+      "id": "project_draft_4_1_c\u00f3digo_completo_de_estilo_e_layout_html_css_incorporado",
+      "community": 1,
+      "norm_label": "4.1. codigo completo de estilo e layout (html + css incorporado)"
+    },
+    {
+      "label": "5. System Integration & Second Brain Alignment",
+      "file_type": "document",
+      "source_file": "project-draft.md",
+      "source_location": "L609",
+      "_origin": "ast",
+      "id": "project_draft_5_system_integration_second_brain_alignment_609",
+      "community": 1,
+      "norm_label": "5. system integration & second brain alignment"
+    },
+    {
+      "label": "5.1. Protocolo de Seguran\u00e7a Web e Envio Cifrado",
+      "file_type": "document",
+      "source_file": "project-draft.md",
+      "source_location": "L611",
+      "_origin": "ast",
+      "id": "project_draft_5_1_protocolo_de_seguran\u00e7a_web_e_envio_cifrado",
+      "community": 1,
+      "norm_label": "5.1. protocolo de seguranca web e envio cifrado"
+    },
+    {
+      "label": "5.2. Integra\u00e7\u00e3o com o Script de Ingest\u00e3o Matinal",
+      "file_type": "document",
+      "source_file": "project-draft.md",
+      "source_location": "L619",
+      "_origin": "ast",
+      "id": "project_draft_5_2_integra\u00e7\u00e3o_com_o_script_de_ingest\u00e3o_matinal",
+      "community": 1,
+      "norm_label": "5.2. integracao com o script de ingestao matinal"
+    },
+    {
+      "label": "6. Non-Functional Requirements & Performance Targets",
+      "file_type": "document",
+      "source_file": "project-draft.md",
+      "source_location": "L625",
+      "_origin": "ast",
+      "id": "project_draft_6_non_functional_requirements_performance_targets_625",
+      "community": 1,
+      "norm_label": "6. non-functional requirements & performance targets"
+    },
+    {
+      "label": "6.1. Otimiza\u00e7\u00e3o de Recursos e Carregamento na Vercel",
+      "file_type": "document",
+      "source_file": "project-draft.md",
+      "source_location": "L627",
+      "_origin": "ast",
+      "id": "project_draft_6_1_otimiza\u00e7\u00e3o_de_recursos_e_carregamento_na_vercel",
+      "community": 1,
+      "norm_label": "6.1. otimizacao de recursos e carregamento na vercel"
+    },
+    {
+      "label": "6.2. Modelo de Resili\u00eancia Offline para Mobilidade",
+      "file_type": "document",
+      "source_file": "project-draft.md",
+      "source_location": "L633",
+      "_origin": "ast",
+      "id": "project_draft_6_2_modelo_de_resili\u00eancia_offline_para_mobilidade",
+      "community": 1,
+      "norm_label": "6.2. modelo de resiliencia offline para mobilidade"
+    },
+    {
+      "label": "PRD3: Technical Specifications",
+      "file_type": "document",
+      "source_file": "project-draft.md",
+      "source_location": "L642",
+      "_origin": "ast",
+      "id": "project_draft_prd3_technical_specifications",
+      "community": 3,
+      "norm_label": "prd3: technical specifications"
+    },
+    {
+      "label": "Architecture Options and Technical Decisions",
+      "file_type": "document",
+      "source_file": "project-draft.md",
+      "source_location": "L644",
+      "_origin": "ast",
+      "id": "project_draft_architecture_options_and_technical_decisions",
+      "community": 2,
+      "norm_label": "architecture options and technical decisions"
+    },
+    {
+      "label": "Abordagens para a aplica\u00e7\u00e3o",
+      "file_type": "document",
+      "source_file": "project-draft.md",
+      "source_location": "L648",
+      "_origin": "ast",
+      "id": "project_draft_abordagens_para_a_aplica\u00e7\u00e3o",
+      "community": 2,
+      "norm_label": "abordagens para a aplicacao"
+    },
+    {
+      "label": "Op\u00e7\u00f5es de desenvolvimento",
+      "file_type": "document",
+      "source_file": "project-draft.md",
+      "source_location": "L652",
+      "_origin": "ast",
+      "id": "project_draft_op\u00e7\u00f5es_de_desenvolvimento",
+      "community": 2,
+      "norm_label": "opcoes de desenvolvimento"
+    },
+    {
+      "label": "Estrat\u00e9gias para reduzir a fric\u00e7\u00e3o",
+      "file_type": "document",
+      "source_file": "project-draft.md",
+      "source_location": "L658",
+      "_origin": "ast",
+      "id": "project_draft_estrat\u00e9gias_para_reduzir_a_fric\u00e7\u00e3o",
+      "community": 2,
+      "norm_label": "estrategias para reduzir a friccao"
+    },
+    {
+      "label": "Funcionalidades de captura estruturada",
+      "file_type": "document",
+      "source_file": "project-draft.md",
+      "source_location": "L670",
+      "_origin": "ast",
+      "id": "project_draft_funcionalidades_de_captura_estruturada",
+      "community": 2,
+      "norm_label": "funcionalidades de captura estruturada"
+    },
+    {
+      "label": "Captura contextual por aplica\u00e7\u00e3o",
+      "file_type": "document",
+      "source_file": "project-draft.md",
+      "source_location": "L682",
+      "_origin": "ast",
+      "id": "project_draft_captura_contextual_por_aplica\u00e7\u00e3o",
+      "community": 2,
+      "norm_label": "captura contextual por aplicacao"
+    },
+    {
+      "label": "Especifica\u00e7\u00f5es t\u00e9cnicas do utilit\u00e1rio de captura",
+      "file_type": "document",
+      "source_file": "project-draft.md",
+      "source_location": "L692",
+      "_origin": "ast",
+      "id": "project_draft_especifica\u00e7\u00f5es_t\u00e9cnicas_do_utilit\u00e1rio_de_captura",
+      "community": 7,
+      "norm_label": "especificacoes tecnicas do utilitario de captura"
+    },
+    {
+      "label": "Arquitetura e desempenho",
+      "file_type": "document",
+      "source_file": "project-draft.md",
+      "source_location": "L694",
+      "_origin": "ast",
+      "id": "project_draft_arquitetura_e_desempenho",
+      "community": 7,
+      "norm_label": "arquitetura e desempenho"
+    },
+    {
+      "label": "Mecanismos de captura e redu\u00e7\u00e3o de fric\u00e7\u00e3o",
+      "file_type": "document",
+      "source_file": "project-draft.md",
+      "source_location": "L699",
+      "_origin": "ast",
+      "id": "project_draft_mecanismos_de_captura_e_redu\u00e7\u00e3o_de_fric\u00e7\u00e3o",
+      "community": 7,
+      "norm_label": "mecanismos de captura e reducao de friccao"
+    },
+    {
+      "label": "Integra\u00e7\u00f5es de contexto e ecossistema",
+      "file_type": "document",
+      "source_file": "project-draft.md",
+      "source_location": "L705",
+      "_origin": "ast",
+      "id": "project_draft_integra\u00e7\u00f5es_de_contexto_e_ecossistema",
+      "community": 7,
+      "norm_label": "integracoes de contexto e ecossistema"
+    },
+    {
+      "label": "Compatibilidade com o segundo c\u00e9rebro",
+      "file_type": "document",
+      "source_file": "project-draft.md",
+      "source_location": "L711",
+      "_origin": "ast",
+      "id": "project_draft_compatibilidade_com_o_segundo_c\u00e9rebro",
+      "community": 7,
+      "norm_label": "compatibilidade com o segundo cerebro"
+    },
+    {
+      "label": "Decis\u00e3o estrat\u00e9gica sobre stack tecnol\u00f3gico",
+      "file_type": "document",
+      "source_file": "project-draft.md",
+      "source_location": "L717",
+      "_origin": "ast",
+      "id": "project_draft_decis\u00e3o_estrat\u00e9gica_sobre_stack_tecnol\u00f3gico",
+      "community": 2,
+      "norm_label": "decisao estrategica sobre stack tecnologico"
+    },
+    {
+      "label": "Python com PySide6 ou Flet",
+      "file_type": "document",
+      "source_file": "project-draft.md",
+      "source_location": "L725",
+      "_origin": "ast",
+      "id": "project_draft_python_com_pyside6_ou_flet",
+      "community": 2,
+      "norm_label": "python com pyside6 ou flet"
+    },
+    {
+      "label": "Recursos necess\u00e1rios para o utilit\u00e1rio",
+      "file_type": "document",
+      "source_file": "project-draft.md",
+      "source_location": "L737",
+      "_origin": "ast",
+      "id": "project_draft_recursos_necess\u00e1rios_para_o_utilit\u00e1rio",
+      "community": 2,
+      "norm_label": "recursos necessarios para o utilitario"
+    },
+    {
+      "label": "Interface e controlo em segundo plano",
+      "file_type": "document",
+      "source_file": "project-draft.md",
+      "source_location": "L741",
+      "_origin": "ast",
+      "id": "project_draft_interface_e_controlo_em_segundo_plano",
+      "community": 2,
+      "norm_label": "interface e controlo em segundo plano"
+    },
+    {
+      "label": "Captura de dados e contexto",
+      "file_type": "document",
+      "source_file": "project-draft.md",
+      "source_location": "L746",
+      "_origin": "ast",
+      "id": "project_draft_captura_de_dados_e_contexto",
+      "community": 2,
+      "norm_label": "captura de dados e contexto"
+    },
+    {
+      "label": "Persist\u00eancia e distribui\u00e7\u00e3o",
+      "file_type": "document",
+      "source_file": "project-draft.md",
+      "source_location": "L753",
+      "_origin": "ast",
+      "id": "project_draft_persist\u00eancia_e_distribui\u00e7\u00e3o",
+      "community": 2,
+      "norm_label": "persistencia e distribuicao"
+    },
+    {
+      "label": "Tutorial: Web App User Guide",
+      "file_type": "document",
+      "source_file": "project-draft.md",
+      "source_location": "L759",
+      "_origin": "ast",
+      "id": "project_draft_tutorial_web_app_user_guide",
+      "community": 3,
+      "norm_label": "tutorial: web app user guide"
+    },
+    {
+      "label": "1. Configura\u00e7\u00e3o Inicial e Instala\u00e7\u00e3o (Fric\u00e7\u00e3o Zero)",
+      "file_type": "document",
+      "source_file": "project-draft.md",
+      "source_location": "L761",
+      "_origin": "ast",
+      "id": "project_draft_1_configura\u00e7\u00e3o_inicial_e_instala\u00e7\u00e3o_fric\u00e7\u00e3o_zero",
+      "community": 3,
+      "norm_label": "1. configuracao inicial e instalacao (friccao zero)"
+    },
+    {
+      "label": "2. O Fluxo Di\u00e1rio de Captura de Texto",
+      "file_type": "document",
+      "source_file": "project-draft.md",
+      "source_location": "L773",
+      "_origin": "ast",
+      "id": "project_draft_2_o_fluxo_di\u00e1rio_de_captura_de_texto",
+      "community": 3,
+      "norm_label": "2. o fluxo diario de captura de texto"
+    },
+    {
+      "label": "3. O Fluxo de Captura por Voz (M\u00e3os Livres)",
+      "file_type": "document",
+      "source_file": "project-draft.md",
+      "source_location": "L784",
+      "_origin": "ast",
+      "id": "project_draft_3_o_fluxo_de_captura_por_voz_m\u00e3os_livres",
+      "community": 3,
+      "norm_label": "3. o fluxo de captura por voz (maos livres)"
+    },
+    {
+      "label": "4. Comportamento Offline (Gest\u00e3o de Redes M\u00f3veis Inst\u00e1veis)",
+      "file_type": "document",
+      "source_file": "project-draft.md",
+      "source_location": "L798",
+      "_origin": "ast",
+      "id": "project_draft_4_comportamento_offline_gest\u00e3o_de_redes_m\u00f3veis_inst\u00e1veis",
+      "community": 3,
+      "norm_label": "4. comportamento offline (gestao de redes moveis instaveis)"
+    },
+    {
+      "label": "5. O Ciclo de Ingest\u00e3o no PC/Mac (A Liga\u00e7\u00e3o ao Second Brain)",
+      "file_type": "document",
+      "source_file": "project-draft.md",
+      "source_location": "L809",
+      "_origin": "ast",
+      "id": "project_draft_5_o_ciclo_de_ingest\u00e3o_no_pc_mac_a_liga\u00e7\u00e3o_ao_second_brain",
+      "community": 3,
+      "norm_label": "5. o ciclo de ingestao no pc/mac (a ligacao ao second brain)"
+    },
+    {
+      "label": "Summary",
+      "file_type": "document",
+      "source_file": "project-draft.md",
+      "source_location": "L826",
+      "_origin": "ast",
+      "id": "project_draft_summary",
+      "community": 3,
+      "norm_label": "summary"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mac/init.lua",
+      "source_location": "L369",
+      "weight": 1.0,
+      "source": "mac_init",
+      "target": "mac_init_paperclip_capturecontext",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mac/init.lua",
+      "source_location": "L442",
+      "weight": 1.0,
+      "source": "mac_init",
+      "target": "mac_init_paperclip_hide",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mac/init.lua",
+      "source_location": "L388",
+      "weight": 1.0,
+      "source": "mac_init",
+      "target": "mac_init_paperclip_populateyaml",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mac/init.lua",
+      "source_location": "L405",
+      "weight": 1.0,
+      "source": "mac_init",
+      "target": "mac_init_paperclip_savenote",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mac/init.lua",
+      "source_location": "L425",
+      "weight": 1.0,
+      "source": "mac_init",
+      "target": "mac_init_paperclip_show",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mac/init.lua",
+      "source_location": "L447",
+      "weight": 1.0,
+      "source": "mac_init",
+      "target": "mac_init_paperclip_toggle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "mac/init.lua",
+      "source_location": "L426",
+      "weight": 1.0,
+      "source": "mac_init_paperclip_show",
+      "target": "mac_init_paperclip_capturecontext",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "mac/init.lua",
+      "source_location": "L436",
+      "weight": 1.0,
+      "source": "mac_init_paperclip_show",
+      "target": "mac_init_paperclip_populateyaml",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "mac/init.lua",
+      "source_location": "L418",
+      "weight": 1.0,
+      "source": "mac_init_paperclip_savenote",
+      "target": "mac_init_paperclip_hide",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "mac/init.lua",
+      "source_location": "L451",
+      "weight": 1.0,
+      "source": "mac_init_paperclip_toggle",
+      "target": "mac_init_paperclip_show",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "mac/init.lua",
+      "source_location": "L449",
+      "weight": 1.0,
+      "source": "mac_init_paperclip_toggle",
+      "target": "mac_init_paperclip_hide",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "readme",
+      "target": "readme_paperclip",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "readme_paperclip",
+      "target": "readme_architecture",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "readme_paperclip",
+      "target": "readme_key_features",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "readme_paperclip",
+      "target": "readme_performance",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "conductor/tracks.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "conductor_tracks",
+      "target": "conductor_tracks_project_tracks",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "conductor/tracks.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "conductor_tracks",
+      "target": "mac_parity_plan",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "conductor/tracks/mac-parity/plan.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "mac_parity_plan",
+      "target": "mac_parity_plan_track_mac_parity_implementation",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "conductor/tracks/mac-parity/plan.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "mac_parity_plan_track_mac_parity_implementation",
+      "target": "mac_parity_plan_objectives",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project-draft.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "project_draft",
+      "target": "project_draft_paperclip_project_draft",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project-draft.md",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "project_draft",
+      "target": "project_draft_prd1_desktop_application",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project-draft.md",
+      "source_location": "L351",
+      "weight": 1.0,
+      "source": "project_draft",
+      "target": "project_draft_prd2_web_pwa_application",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project-draft.md",
+      "source_location": "L642",
+      "weight": 1.0,
+      "source": "project_draft",
+      "target": "project_draft_prd3_technical_specifications",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project-draft.md",
+      "source_location": "L759",
+      "weight": 1.0,
+      "source": "project_draft",
+      "target": "project_draft_tutorial_web_app_user_guide",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project-draft.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "project_draft_paperclip_project_draft",
+      "target": "project_draft_document_index",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project-draft.md",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "project_draft_prd1_desktop_application",
+      "target": "project_draft_1_vision_purpose",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project-draft.md",
+      "source_location": "L40",
+      "weight": 1.0,
+      "source": "project_draft_prd1_desktop_application",
+      "target": "project_draft_2_system_architecture_ecosystem_topology",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project-draft.md",
+      "source_location": "L81",
+      "weight": 1.0,
+      "source": "project_draft_prd1_desktop_application",
+      "target": "project_draft_3_functional_specifications_feature_requirements",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project-draft.md",
+      "source_location": "L132",
+      "weight": 1.0,
+      "source": "project_draft_prd1_desktop_application",
+      "target": "project_draft_4_visual_interface_design_guidelines",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project-draft.md",
+      "source_location": "L225",
+      "weight": 1.0,
+      "source": "project_draft_prd1_desktop_application",
+      "target": "project_draft_5_system_integration_second_brain_alignment",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project-draft.md",
+      "source_location": "L334",
+      "weight": 1.0,
+      "source": "project_draft_prd1_desktop_application",
+      "target": "project_draft_6_non_functional_requirements_performance_targets",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project-draft.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "project_draft_prd1_desktop_application",
+      "target": "project_draft_product_requirement_document_prd_vers\u00e3o_expandida",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project-draft.md",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "project_draft_prd1_desktop_application",
+      "target": "project_draft_project_paperclip_ultra_lightweight_desktop_scratchpad",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project-draft.md",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "project_draft_1_vision_purpose",
+      "target": "project_draft_1_1_contexto_acad\u00e9mico_e_profissional",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project-draft.md",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "project_draft_1_vision_purpose",
+      "target": "project_draft_1_2_objetivos_estrat\u00e9gicos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project-draft.md",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "project_draft_2_system_architecture_ecosystem_topology",
+      "target": "project_draft_2_1_fluxo_de_dados_e_topologia_de_redes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project-draft.md",
+      "source_location": "L73",
+      "weight": 1.0,
+      "source": "project_draft_2_system_architecture_ecosystem_topology",
+      "target": "project_draft_2_2_robustez_e_tratamento_de_exce\u00e7\u00f5es_criptogr\u00e1ficas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project-draft.md",
+      "source_location": "L83",
+      "weight": 1.0,
+      "source": "project_draft_3_functional_specifications_feature_requirements",
+      "target": "project_draft_3_1_keyboard_first_interface_window_lifecycle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project-draft.md",
+      "source_location": "L92",
+      "weight": 1.0,
+      "source": "project_draft_3_functional_specifications_feature_requirements",
+      "target": "project_draft_3_2_contextual_tab_architecture_dynamic_routing",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project-draft.md",
+      "source_location": "L111",
+      "weight": 1.0,
+      "source": "project_draft_3_functional_specifications_feature_requirements",
+      "target": "project_draft_3_3_arquitetura_local_first_e_sincroniza\u00e7\u00e3o_concorrente",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project-draft.md",
+      "source_location": "L117",
+      "weight": 1.0,
+      "source": "project_draft_3_functional_specifications_feature_requirements",
+      "target": "project_draft_3_4_local_clipboard_integration",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project-draft.md",
+      "source_location": "L123",
+      "weight": 1.0,
+      "source": "project_draft_3_functional_specifications_feature_requirements",
+      "target": "project_draft_3_5_pipeline_de_transcri\u00e7\u00e3o_de_\u00e1udio_whisper_vad",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project-draft.md",
+      "source_location": "L136",
+      "weight": 1.0,
+      "source": "project_draft_4_visual_interface_design_guidelines",
+      "target": "project_draft_4_1_arquitetura_de_janela_e_comportamento_geom\u00e9trico",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project-draft.md",
+      "source_location": "L141",
+      "weight": 1.0,
+      "source": "project_draft_4_visual_interface_design_guidelines",
+      "target": "project_draft_4_2_especifica\u00e7\u00f5es_de_estilo_e_folha_de_estilo_completa_pyside6_qss",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project-draft.md",
+      "source_location": "L227",
+      "weight": 1.0,
+      "source": "project_draft_5_system_integration_second_brain_alignment",
+      "target": "project_draft_5_1_seguran\u00e7a_cifragem_sim\u00e9trica_e_autentica\u00e7\u00e3o_cloud",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project-draft.md",
+      "source_location": "L235",
+      "weight": 1.0,
+      "source": "project_draft_5_system_integration_second_brain_alignment",
+      "target": "project_draft_5_2_pipeline_do_script_de_ingest\u00e3o_local_pull_pocketbase_py",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project-draft.md",
+      "source_location": "L336",
+      "weight": 1.0,
+      "source": "project_draft_6_non_functional_requirements_performance_targets",
+      "target": "project_draft_6_1_m\u00e9tricas_de_desempenho_e_aloca\u00e7\u00e3o_de_recursos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project-draft.md",
+      "source_location": "L342",
+      "weight": 1.0,
+      "source": "project_draft_6_non_functional_requirements_performance_targets",
+      "target": "project_draft_6_2_robustez_de_rede_e_estrat\u00e9gia_de_toler\u00e2ncia_a_falhas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project-draft.md",
+      "source_location": "L359",
+      "weight": 1.0,
+      "source": "project_draft_prd2_web_pwa_application",
+      "target": "project_draft_1_vision_purpose_359",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project-draft.md",
+      "source_location": "L375",
+      "weight": 1.0,
+      "source": "project_draft_prd2_web_pwa_application",
+      "target": "project_draft_2_system_architecture_ecosystem_topology_375",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project-draft.md",
+      "source_location": "L407",
+      "weight": 1.0,
+      "source": "project_draft_prd2_web_pwa_application",
+      "target": "project_draft_3_functional_specifications_feature_requirements_407",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project-draft.md",
+      "source_location": "L440",
+      "weight": 1.0,
+      "source": "project_draft_prd2_web_pwa_application",
+      "target": "project_draft_4_visual_interface_design_guidelines_440",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project-draft.md",
+      "source_location": "L609",
+      "weight": 1.0,
+      "source": "project_draft_prd2_web_pwa_application",
+      "target": "project_draft_5_system_integration_second_brain_alignment_609",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project-draft.md",
+      "source_location": "L625",
+      "weight": 1.0,
+      "source": "project_draft_prd2_web_pwa_application",
+      "target": "project_draft_6_non_functional_requirements_performance_targets_625",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project-draft.md",
+      "source_location": "L353",
+      "weight": 1.0,
+      "source": "project_draft_prd2_web_pwa_application",
+      "target": "project_draft_product_requirement_document_prd",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project-draft.md",
+      "source_location": "L355",
+      "weight": 1.0,
+      "source": "project_draft_prd2_web_pwa_application",
+      "target": "project_draft_project_paperclip_web_cloud_based_mobile_browser_capture_endpoint",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project-draft.md",
+      "source_location": "L361",
+      "weight": 1.0,
+      "source": "project_draft_1_vision_purpose_359",
+      "target": "project_draft_1_1_contexto_de_mobilidade_e_acessibilidade_universal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project-draft.md",
+      "source_location": "L367",
+      "weight": 1.0,
+      "source": "project_draft_1_vision_purpose_359",
+      "target": "project_draft_1_2_objetivos_estrat\u00e9gicos_367",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project-draft.md",
+      "source_location": "L398",
+      "weight": 1.0,
+      "source": "project_draft_2_system_architecture_ecosystem_topology_375",
+      "target": "project_draft_2_1_mitiga\u00e7\u00e3o_de_limita\u00e7\u00f5es_serverless",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project-draft.md",
+      "source_location": "L409",
+      "weight": 1.0,
+      "source": "project_draft_3_functional_specifications_feature_requirements_407",
+      "target": "project_draft_3_1_interface_web_progressiva_pwa_e_responsividade",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project-draft.md",
+      "source_location": "L415",
+      "weight": 1.0,
+      "source": "project_draft_3_functional_specifications_feature_requirements_407",
+      "target": "project_draft_3_2_menu_superior_de_abas_e_atalhos_touch_teclado",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project-draft.md",
+      "source_location": "L428",
+      "weight": 1.0,
+      "source": "project_draft_3_functional_specifications_feature_requirements_407",
+      "target": "project_draft_3_3_integra\u00e7\u00e3o_com_clipboard_do_android_browser",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project-draft.md",
+      "source_location": "L432",
+      "weight": 1.0,
+      "source": "project_draft_3_functional_specifications_feature_requirements_407",
+      "target": "project_draft_3_4_captura_de_voz_nativa_web_audio_api_whisper_cloud",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project-draft.md",
+      "source_location": "L444",
+      "weight": 1.0,
+      "source": "project_draft_4_visual_interface_design_guidelines_440",
+      "target": "project_draft_4_1_c\u00f3digo_completo_de_estilo_e_layout_html_css_incorporado",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project-draft.md",
+      "source_location": "L611",
+      "weight": 1.0,
+      "source": "project_draft_5_system_integration_second_brain_alignment_609",
+      "target": "project_draft_5_1_protocolo_de_seguran\u00e7a_web_e_envio_cifrado",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project-draft.md",
+      "source_location": "L619",
+      "weight": 1.0,
+      "source": "project_draft_5_system_integration_second_brain_alignment_609",
+      "target": "project_draft_5_2_integra\u00e7\u00e3o_com_o_script_de_ingest\u00e3o_matinal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project-draft.md",
+      "source_location": "L627",
+      "weight": 1.0,
+      "source": "project_draft_6_non_functional_requirements_performance_targets_625",
+      "target": "project_draft_6_1_otimiza\u00e7\u00e3o_de_recursos_e_carregamento_na_vercel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project-draft.md",
+      "source_location": "L633",
+      "weight": 1.0,
+      "source": "project_draft_6_non_functional_requirements_performance_targets_625",
+      "target": "project_draft_6_2_modelo_de_resili\u00eancia_offline_para_mobilidade",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project-draft.md",
+      "source_location": "L644",
+      "weight": 1.0,
+      "source": "project_draft_prd3_technical_specifications",
+      "target": "project_draft_architecture_options_and_technical_decisions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project-draft.md",
+      "source_location": "L648",
+      "weight": 1.0,
+      "source": "project_draft_architecture_options_and_technical_decisions",
+      "target": "project_draft_abordagens_para_a_aplica\u00e7\u00e3o",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project-draft.md",
+      "source_location": "L682",
+      "weight": 1.0,
+      "source": "project_draft_architecture_options_and_technical_decisions",
+      "target": "project_draft_captura_contextual_por_aplica\u00e7\u00e3o",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project-draft.md",
+      "source_location": "L717",
+      "weight": 1.0,
+      "source": "project_draft_architecture_options_and_technical_decisions",
+      "target": "project_draft_decis\u00e3o_estrat\u00e9gica_sobre_stack_tecnol\u00f3gico",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project-draft.md",
+      "source_location": "L692",
+      "weight": 1.0,
+      "source": "project_draft_architecture_options_and_technical_decisions",
+      "target": "project_draft_especifica\u00e7\u00f5es_t\u00e9cnicas_do_utilit\u00e1rio_de_captura",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project-draft.md",
+      "source_location": "L658",
+      "weight": 1.0,
+      "source": "project_draft_architecture_options_and_technical_decisions",
+      "target": "project_draft_estrat\u00e9gias_para_reduzir_a_fric\u00e7\u00e3o",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project-draft.md",
+      "source_location": "L670",
+      "weight": 1.0,
+      "source": "project_draft_architecture_options_and_technical_decisions",
+      "target": "project_draft_funcionalidades_de_captura_estruturada",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project-draft.md",
+      "source_location": "L737",
+      "weight": 1.0,
+      "source": "project_draft_architecture_options_and_technical_decisions",
+      "target": "project_draft_recursos_necess\u00e1rios_para_o_utilit\u00e1rio",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project-draft.md",
+      "source_location": "L652",
+      "weight": 1.0,
+      "source": "project_draft_abordagens_para_a_aplica\u00e7\u00e3o",
+      "target": "project_draft_op\u00e7\u00f5es_de_desenvolvimento",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project-draft.md",
+      "source_location": "L694",
+      "weight": 1.0,
+      "source": "project_draft_especifica\u00e7\u00f5es_t\u00e9cnicas_do_utilit\u00e1rio_de_captura",
+      "target": "project_draft_arquitetura_e_desempenho",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project-draft.md",
+      "source_location": "L711",
+      "weight": 1.0,
+      "source": "project_draft_especifica\u00e7\u00f5es_t\u00e9cnicas_do_utilit\u00e1rio_de_captura",
+      "target": "project_draft_compatibilidade_com_o_segundo_c\u00e9rebro",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project-draft.md",
+      "source_location": "L705",
+      "weight": 1.0,
+      "source": "project_draft_especifica\u00e7\u00f5es_t\u00e9cnicas_do_utilit\u00e1rio_de_captura",
+      "target": "project_draft_integra\u00e7\u00f5es_de_contexto_e_ecossistema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project-draft.md",
+      "source_location": "L699",
+      "weight": 1.0,
+      "source": "project_draft_especifica\u00e7\u00f5es_t\u00e9cnicas_do_utilit\u00e1rio_de_captura",
+      "target": "project_draft_mecanismos_de_captura_e_redu\u00e7\u00e3o_de_fric\u00e7\u00e3o",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project-draft.md",
+      "source_location": "L725",
+      "weight": 1.0,
+      "source": "project_draft_decis\u00e3o_estrat\u00e9gica_sobre_stack_tecnol\u00f3gico",
+      "target": "project_draft_python_com_pyside6_ou_flet",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project-draft.md",
+      "source_location": "L746",
+      "weight": 1.0,
+      "source": "project_draft_recursos_necess\u00e1rios_para_o_utilit\u00e1rio",
+      "target": "project_draft_captura_de_dados_e_contexto",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project-draft.md",
+      "source_location": "L741",
+      "weight": 1.0,
+      "source": "project_draft_recursos_necess\u00e1rios_para_o_utilit\u00e1rio",
+      "target": "project_draft_interface_e_controlo_em_segundo_plano",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project-draft.md",
+      "source_location": "L753",
+      "weight": 1.0,
+      "source": "project_draft_recursos_necess\u00e1rios_para_o_utilit\u00e1rio",
+      "target": "project_draft_persist\u00eancia_e_distribui\u00e7\u00e3o",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project-draft.md",
+      "source_location": "L761",
+      "weight": 1.0,
+      "source": "project_draft_tutorial_web_app_user_guide",
+      "target": "project_draft_1_configura\u00e7\u00e3o_inicial_e_instala\u00e7\u00e3o_fric\u00e7\u00e3o_zero",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project-draft.md",
+      "source_location": "L773",
+      "weight": 1.0,
+      "source": "project_draft_tutorial_web_app_user_guide",
+      "target": "project_draft_2_o_fluxo_di\u00e1rio_de_captura_de_texto",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project-draft.md",
+      "source_location": "L784",
+      "weight": 1.0,
+      "source": "project_draft_tutorial_web_app_user_guide",
+      "target": "project_draft_3_o_fluxo_de_captura_por_voz_m\u00e3os_livres",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project-draft.md",
+      "source_location": "L798",
+      "weight": 1.0,
+      "source": "project_draft_tutorial_web_app_user_guide",
+      "target": "project_draft_4_comportamento_offline_gest\u00e3o_de_redes_m\u00f3veis_inst\u00e1veis",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project-draft.md",
+      "source_location": "L809",
+      "weight": 1.0,
+      "source": "project_draft_tutorial_web_app_user_guide",
+      "target": "project_draft_5_o_ciclo_de_ingest\u00e3o_no_pc_mac_a_liga\u00e7\u00e3o_ao_second_brain",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project-draft.md",
+      "source_location": "L826",
+      "weight": 1.0,
+      "source": "project_draft_tutorial_web_app_user_guide",
+      "target": "project_draft_summary",
+      "confidence_score": 1.0
+    }
+  ],
+  "hyperedges": []
+}
