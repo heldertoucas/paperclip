@@ -1,0 +1,11 @@
+{
+  "du-bootstrap": {
+    "SessionStart": [
+      {
+        "type": "command",
+        "command": "python -m dev.cli session bootstrap --agent Codex --format text",
+        "timeout": 5
+      }
+    ]
+  }
+}

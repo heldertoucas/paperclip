@@ -1,0 +1,10 @@
+{
+  "du-bootstrap": {
+    "session.created": [
+      {
+        "command": "python -m dev.cli session bootstrap --agent OpenCode --format json",
+        "timeout": 5
+      }
+    ]
+  }
+}

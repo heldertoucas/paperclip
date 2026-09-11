@@ -1,0 +1,11 @@
+{
+  "du-bootstrap": {
+    "PreInvocation": [
+      {
+        "type": "command",
+        "command": "python -m dev.cli session bootstrap --agent Antigravity --format antigravity",
+        "timeout": 5
+      }
+    ]
+  }
+}

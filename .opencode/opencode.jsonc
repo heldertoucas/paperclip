@@ -1,0 +1,70 @@
+{
+  "mcp": {
+    "dev-universe": {
+      "type": "local",
+      "enabled": true,
+      "command": [
+        "C:\\Users\\helder.toucas\\Dev\\engine\\.venv\\Scripts\\python.exe",
+        "-u",
+        "-m",
+        "dev.cli",
+        "mcp",
+        "run"
+      ],
+      "environment": {
+        "DEV_ROOT": "C:\\Users\\helder.toucas\\Dev",
+        "PYTHONPATH": "C:\\Users\\helder.toucas\\Dev\\engine",
+        "PYTHONUNBUFFERED": "1",
+        "PYTHONIOENCODING": "utf-8"
+      }
+    },
+    "fetch": {
+      "type": "local",
+      "enabled": true,
+      "command": [
+        "uvx",
+        "mcp-server-fetch"
+      ]
+    },
+    "graphify": {
+      "type": "local",
+      "enabled": true,
+      "command": [
+        "node",
+        "-e",
+        "for (const k of ['HTTP_PROXY','HTTPS_PROXY','ALL_PROXY','GIT_HTTP_PROXY','GIT_HTTPS_PROXY','http_proxy','https_proxy','all_proxy','git_http_proxy','git_https_proxy','NPM_CONFIG_PROXY','NPM_CONFIG_HTTPS_PROXY','NPM_CONFIG_ALL_PROXY','npm_config_proxy','npm_config_https_proxy','npm_config_all_proxy']) delete process.env[k]; process.env.NPM_CONFIG_OFFLINE = 'false'; process.env.npm_config_offline = 'false'; const { spawn } = require('child_process'); const path = require('path'); const os = require('os'); const fs = require('fs'); const graphPath = path.join(process.cwd(), 'graphify-out', 'graph.json'); const graphDir = path.dirname(graphPath); if (!fs.existsSync(graphDir)) fs.mkdirSync(graphDir, { recursive: true }); if (!fs.existsSync(graphPath)) fs.writeFileSync(graphPath, '{\"nodes\": [], \"links\": []}', 'utf8'); spawn('uv', ['tool', 'run', '--from', 'graphifyy[mcp]', 'python', '-m', 'graphify.serve', graphPath], { stdio: 'inherit', shell: process.platform === 'win32', env: process.env });"
+      ]
+    },
+    "context7": {
+      "type": "local",
+      "enabled": true,
+      "command": [
+        "node",
+        "-e",
+        "for (const k of ['HTTP_PROXY','HTTPS_PROXY','ALL_PROXY','GIT_HTTP_PROXY','GIT_HTTPS_PROXY','http_proxy','https_proxy','all_proxy','git_http_proxy','git_https_proxy','NPM_CONFIG_PROXY','NPM_CONFIG_HTTPS_PROXY','NPM_CONFIG_ALL_PROXY','npm_config_proxy','npm_config_https_proxy','npm_config_all_proxy']) delete process.env[k]; process.env.NPM_CONFIG_OFFLINE = 'false'; process.env.npm_config_offline = 'false'; const { spawn } = require('child_process'); const cmd = process.platform === 'win32' ? 'context7-mcp.cmd' : 'context7-mcp'; const child = spawn(cmd, ['--transport', 'stdio'], { stdio: ['inherit', 'inherit', 'pipe'], shell: true, env: process.env }); child.on('error', (err) => { console.error('[MCP Spawn Error] Failed to start ' + cmd + ':', err.message); process.exit(1); }); child.stderr.pipe(process.stderr);"
+      ]
+    },
+    "playwright": {
+      "type": "local",
+      "enabled": true,
+      "command": [
+        "node",
+        "-e",
+        "for (const k of ['HTTP_PROXY','HTTPS_PROXY','ALL_PROXY','GIT_HTTP_PROXY','GIT_HTTPS_PROXY','http_proxy','https_proxy','all_proxy','git_http_proxy','git_https_proxy','NPM_CONFIG_PROXY','NPM_CONFIG_HTTPS_PROXY','NPM_CONFIG_ALL_PROXY','npm_config_proxy','npm_config_https_proxy','npm_config_all_proxy']) delete process.env[k]; process.env.NPM_CONFIG_OFFLINE = 'false'; process.env.npm_config_offline = 'false'; const { spawn } = require('child_process'); const cmd = process.platform === 'win32' ? 'playwright-mcp.cmd' : 'playwright-mcp'; const child = spawn(cmd, ['--headless'], { stdio: ['inherit', 'inherit', 'pipe'], shell: true, env: process.env }); child.on('error', (err) => { console.error('[MCP Spawn Error] Failed to start ' + cmd + ':', err.message); process.exit(1); }); child.stderr.pipe(process.stderr);"
+      ]
+    },
+    "ai-obsidian": {
+      "type": "local",
+      "enabled": true,
+      "command": [
+        "node",
+        "C:\\\\Users\\\\helder.toucas\\\\Dev\\\\ai-obsidian\\\\dist\\\\index.js"
+      ],
+      "environment": {
+        "OBSIDIAN_VAULT_PATH": "C:\\\\Users\\\\helder.toucas\\\\Dev\\\\home",
+        "GEMINI_OBSIDIAN_DB_PATH": "C:\\\\Users\\\\helder.toucas\\\\Dev\\\\.dev-cache\\\\ai-obsidian-lancedb",
+        "GEMINI_OBSIDIAN_HASH_PATH": "C:\\\\Users\\\\helder.toucas\\\\Dev\\\\.dev-cache\\\\ai-obsidian-file-hashes.json"
+      }
+    }
+  }
+}

@@ -1,8 +1,12 @@
 # Paperclip
 
+> [!WARNING]
+> **Status: Decommissioned (Preserved for Future Reboot)**
+> Paperclip is currently dormant and decommissioned as of 2026-09-11 to eliminate background system resource usage and autostart overhead. All code, architecture, and documentation are preserved in this repository to serve as the foundation for an upcoming reimagined capture utility. See [OpenSpec Change: decommission-paperclip](file:///C:/Users/helder.toucas/Dev/paperclip/openspec/changes/decommission-paperclip/proposal.md).
+
 Ultra-lightweight Windows capture utility for the **obsidian-ht** Second Brain ecosystem.
 
-Paperclip is a high-performance, keyboard-first scratchpad designed for instant information capture. It acts as an efermeral buffer between your stream of consciousness and your long-term knowledge repository.
+Paperclip was a keyboard-first scratchpad designed for instant information capture. It acted as an ephemeral buffer between your stream of consciousness and your long-term knowledge repository.
 
 ## 🚀 Key Features
 
