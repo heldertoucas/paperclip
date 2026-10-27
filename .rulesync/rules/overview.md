@@ -1,4 +1,8 @@
 ---
+root: true
+targets: ["*"]
+description: "Project overview, tech stack and standards for paperclip"
+globs: ["**/*"]
 last_verified: 2026-07-21
 project: paperclip
 tags: [ia, gestao, paperclip]
