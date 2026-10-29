@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "command",
+      "read_file(**)",
+      "write_file(**)"
+    ],
+    "deny": [
+      "command(Remove-Item -Path C:\\Users\\helder.toucas\\Dev*)",
+      "command(git push * --delete*)",
+      "command(git push * --force*)",
+      "command(git push * -f*)",
+      "command(git push --force*)",
+      "command(rm -rf C:\\Users\\helder.toucas\\Dev)",
+      "command(rm -rf C:\\Users\\helder.toucas\\Dev/)",
+      "command(rmdir /s /q C:\\Users\\helder.toucas\\Dev)",
+      "read_file(**/*.key)",
+      "read_file(**/*.pem)",
+      "read_file(**/.env*)",
+      "read_file(**/id_ed25519*)",
+      "read_file(**/id_rsa*)",
+      "read_file(**/keys.txt)"
+    ]
+  }
+}

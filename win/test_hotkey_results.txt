@@ -1,0 +1,4 @@
+SUCCESS: ^+Space registered
+SUCCESS: ^!Space registered
+SUCCESS: #!Space registered
+SUCCESS: #Space registered

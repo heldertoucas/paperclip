@@ -3,9 +3,18 @@
   "targets": [
     "antigravity-cli",
     "claudecode",
-    "opencode"
+    "codexcli",
+    "opencode",
+    "omp"
   ],
   "features": [
-    "rules"
-  ]
+    "rules",
+    "mcp",
+    "commands",
+    "skills",
+    "subagents",
+    "hooks",
+    "permissions"
+  ],
+  "delete": true
 }

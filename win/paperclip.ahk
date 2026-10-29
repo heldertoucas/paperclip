@@ -115,8 +115,8 @@ ToolsMenu := Menu()
 ToolsMenu.Add("Sincronizar e Fechar Cofre (Push / Handoff)", (*) => Run('C:\Users\helder.toucas\Dev\DU-Launcher\01 - Ferramentas Principais\Sincronizar Cofre (Push).cmd', "C:\Users\helder.toucas\Dev\home"))
 ToolsMenu.Add("Executar Fecho Diário (18:00)", (*) => Run('pwsh.exe -NoLogo -NoProfile -ExecutionPolicy Bypass -File "C:\Users\helder.toucas\Dev\home\scripts\obsidian_sync_close.ps1"', "C:\Users\helder.toucas\Dev\home"))
 ToolsMenu.Add()
-ToolsMenu.Add("Abrir &Chrome (Agente Moodle - CDP 9222)", (*) => Run('python.exe "C:\Users\helder.toucas\Dev\work\projetos\curso-online-teams-sharepoint\scripts\launch_chrome_cdp.py"'))
-ToolsMenu.Add("Abrir &Brave (Agente IA - CDP 9222)", (*) => Run('"C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe" --remote-debugging-port=9222 --user-data-dir="C:\tmp\brave_agent_profile"'))
+ToolsMenu.Add("Abrir &Chrome (Automação - CDP 9222)", (*) => Run('C:\Users\helder.toucas\Dev\Abrir_Chrome_Automacao.cmd', "C:\Users\helder.toucas\Dev"))
+ToolsMenu.Add("Abrir &Brave (Perfil Normal - CDP 9223)", (*) => Run('C:\Users\helder.toucas\Dev\Abrir_Brave_Automacao.cmd', "C:\Users\helder.toucas\Dev"))
 ToolsMenu.Add()
 ToolsMenu.Add("Abrir &Moderação de Fóruns (HTML)", (*) => Run('explorer.exe "C:\Users\helder.toucas\Dev\work\projetos\curso-online-teams-sharepoint\docs\moderacao_forum.html"'))
 MenuBarObj.Add("&Tools", ToolsMenu)
@@ -220,8 +220,8 @@ try TraySetIcon("shell32.dll", 71) ; Distinct Notepad/Document icon instead of g
 
 ; Development Universe (DU) Submenus
 aiMenu := Menu()
-aiMenu.Add("1. Abrir Chrome (Agente Moodle - CDP 9222)", (*) => Run('python.exe "C:\Users\helder.toucas\Dev\work\projetos\curso-online-teams-sharepoint\scripts\launch_chrome_cdp.py"'))
-aiMenu.Add("2. Abrir Brave (Agente IA - CDP 9222)", (*) => Run('"C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe" --remote-debugging-port=9222 --user-data-dir="C:\tmp\brave_agent_profile"'))
+aiMenu.Add("1. Abrir Chrome (Automação - CDP 9222)", (*) => Run('C:\Users\helder.toucas\Dev\Abrir_Chrome_Automacao.cmd', "C:\Users\helder.toucas\Dev"))
+aiMenu.Add("2. Abrir Brave (Perfil Normal - CDP 9223)", (*) => Run('C:\Users\helder.toucas\Dev\Abrir_Brave_Automacao.cmd', "C:\Users\helder.toucas\Dev"))
 
 webMenu := Menu()
 webMenu.Add("1. App Avaliação (Vercel)", (*) => Run("https://app-avaliacao.vercel.app"))
@@ -271,10 +271,11 @@ ShowWindow()
 TrayTip "Paperclip v2", "Active in Tray (Ctrl+Shift+Space)", 1
 
 ; ==============================================================================
-; GLOBAL ACTIVATION HOTKEY
+; GLOBAL ACTIVATION HOTKEY (Disabled in favor of Paperclip2 Tauri)
 ; ==============================================================================
 
-^+Space::ToggleWindow()  ; Ctrl+Shift+Space
+; ^+Space::ToggleWindow()  ; Cedido à app Tauri Paperclip2
+
 
 ; ==============================================================================
 ; IN-APP CONTEXTUAL SHORTCUTS (ACTIVE WHEN PAPERCLIP IS FOCUSED)
